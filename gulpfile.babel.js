@@ -38,13 +38,9 @@ gulp.task('styles-dev', () => {
       importer: tildeImporter,
       outputStyle: 'expanded'
     }))
-    .pipe(postcss([
-      autoprefixer({
-        browsers: '> 1%, last 2 versions, Firefox ESR, Opera 12.1'
-      })
-    ]))
+    .pipe(postcss(postcssPlugins))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./public/css/'))
+    .pipe(gulp.dest('./public/assets/css/'))
     .pipe(server.stream({match: '**/*.css'}))
 })
 
@@ -66,7 +62,7 @@ gulp.task('styles-build', () => {
         })
       ]
     ))
-    .pipe(gulp.dest('./public/css/'))
+    .pipe(gulp.dest('./public/assets/css/'))
 })
 
 gulp.task('pug-dev', () =>
@@ -74,7 +70,7 @@ gulp.task('pug-dev', () =>
     .pipe(plumber())
     .pipe(pug({
       pretty: true,
-      basedir: './dev/pug'
+      basedir: './src/pug'
     }))
     .pipe(gulp.dest('./public'))
 )
@@ -83,7 +79,7 @@ gulp.task('pug-build', () =>
   gulp.src('./src/pug/pages/**/*.pug')
     .pipe(plumber())
     .pipe(pug({
-      basedir: './dev/pug'
+      basedir: './src/pug'
     }))
     .pipe(gulp.dest('./public'))
 )
@@ -108,7 +104,7 @@ gulp.task('scripts-dev', () =>
     }))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./public/js'))
+    .pipe(gulp.dest('./public/assets/js'))
 )
 
 gulp.task('scripts-build', () =>
@@ -131,7 +127,7 @@ gulp.task('scripts-build', () =>
     }))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./public/js'))
+    .pipe(gulp.dest('./public/assets/js'))
 )
 
 gulp.task('images-build', () => {
