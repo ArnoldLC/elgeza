@@ -36,7 +36,8 @@ gulp.task('styles-dev', () => {
     .pipe(plumber())
     .pipe(sass({
       importer: tildeImporter,
-      outputStyle: 'expanded'
+      outputStyle: 'expanded',
+      includePaths: ['./node_modules']
     }))
     .pipe(postcss(postcssPlugins))
     .pipe(sourcemaps.write('.'))
@@ -48,7 +49,8 @@ gulp.task('styles-build', () => {
   gulp.src('./src/scss/styles.scss')
     .pipe(plumber())
     .pipe(sass({
-      importer: tildeImporter
+      importer: tildeImporter,
+      includePaths: ['./node_modules']
     }))
     .pipe(postcss(
       [

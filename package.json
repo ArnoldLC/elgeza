@@ -23,6 +23,7 @@
     "browser-sync": "^2.24.7",
     "browserify": "^16.2.2",
     "cssnano": "^4.1.0",
+    "ed-grid": "^2.8.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^8.0.0",
     "gulp-cache-bust": "^1.4.0",
