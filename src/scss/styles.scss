@@ -1,7 +1,16 @@
 /*
   This boilerplate is based in ITCSS and SMACSS
 */
-@import "~ed-grid/ed-grid.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800');
+@font-face {
+  font-family: 'Cocogoose', 'Renogare', 'Raleway';
+  src: url('../fonts/Cocogoose Pro-trial.ttf') format('truetype'),
+      url('../fonts/Cocogoose Pro-trial.ttf') format('woff');
+      // url('../fonts/Renogare.ttf');
+}
+
+@import "~ed-grid/ed-grid";
+@import "~swiper/dist/css/swiper";
 
 // Config
 @import "config/functions";
@@ -20,6 +29,19 @@
   // Crea los archivos adicionales que necesites (uno por componente)
 @import "components/buttons";
 @import "components/menus";
+@import "components/card-service";
+@import "components/skill-item";
+@import "components/banner-altern";
+
+// INCLUDES
+@import "includes/main-banner";
+@import "includes/footer";
+@import "includes/map";
+@import "includes/nosotros";
+@import "includes/contact-us";
+@import "includes/services";
+@import "includes/customers";
+@import "includes/contact";
 
 // Theme (colors and fonts)
 @import "theme/typography";

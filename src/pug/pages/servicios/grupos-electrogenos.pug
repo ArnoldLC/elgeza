@@ -1,0 +1,17 @@
+extends /config/template
+append config
+  -pageTitle = 'Home'
+  -pageDescription = 'Pagina inicial de EDboilerplate'
+  -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
+
+block main
+  +bannerAltern('/assets/img/servicios.png', 'Servicios')
+  main.service
+    .service-container
+      h3.service__title Grupos electrógenos
+      p.service__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?
+  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+    .contact-us-container
+      p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
+      a.button.button--yellow(href="/contacto.html") Contáctanos Ahora
+  include /includes/map

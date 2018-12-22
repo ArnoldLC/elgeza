@@ -9,7 +9,11 @@
   }
 
   &__link {
-    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   &__item {
@@ -39,7 +43,7 @@
   }
 }
 .main-header {
-  background: yellow;
+  // background: yellow;
   position: relative;
   height: 4rem;
   display: flex;
@@ -58,7 +62,7 @@
 
 
 .header-links {
-  background: cyan;
+  // background: cyan;
   position: fixed;
   right: 0;
   top: 4rem;

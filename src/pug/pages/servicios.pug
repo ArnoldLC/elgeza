@@ -5,4 +5,9 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  include /includes/main-menu
+  +bannerAltern('/assets/img/servicios.png', 'Reparación de Equipos')
+  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+    .contact-us-container
+      p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
+      a.button.button--yellow(href="contacto.html") Contáctanos Ahora
+  include /includes/map

@@ -1,2 +1,13 @@
 // Typography
-$font-family: 'sans-serif';
+$font-family: 'Raleway', 'Cocogoose', 'sans-serif';
+
+:root {
+  --bg-image: url(../img/inicio.png);
+  --color-primary: #7f1430;
+  --color-second: #c7810b;
+  --color-bg-primary: #42061c;
+  --color-bg-second: #d98b18;
+  --black: #000;
+  --white: #fff;
+  --gray: #606060; 
+}

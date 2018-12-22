@@ -5,4 +5,19 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  include /includes/main-menu
+  +bannerAltern('/assets/img/nosotros.png', 'Nosotros')
+  main.about-us
+    .about-us-container
+      .about-us__info
+        h3.about-us__title ¿Quiénes somos?
+        p.about-us__description Elgeza es una empresa que cuenta con vasta experiencia en la venta y reparación de equipos electromecánicos, asegurando así la continuidad de los procesos productivos de sus clientes. Contamos con un equipo de técnicos profesionales, a su vez somos representantes del servicio técnico Grundfos.
+      .about-us__image
+        img(src="/assets/img/imagen_nosotros.png", alt="Persona en oficina")
+      .about-us__info
+        h3.about-us__title Misión
+        p.about-us__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cum ut debitis saepe ipsam dolore laborum eum nobis amet qui! Quod totam iste voluptate sed expedita, optio deleniti ad eligendi.
+      .about-us__info
+        h3.about-us__title Visión
+        p.about-us__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat voluptatem saepe, aperiam consequuntur velit fugit libero eaque, at reiciendis maiores neque dolores esse sint possimus voluptas iusto aliquid corporis.
+  include /includes/skills
+  include /includes/map

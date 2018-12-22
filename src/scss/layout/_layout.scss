@@ -1,0 +1,21 @@
+.skills {
+  background: var(--bg-image) center center;
+  background-size: cover;
+  margin: 0;
+  padding: 2rem 0;
+  &__description {
+    @include edItem(100);
+    @include from(l) {
+      margin: 0 12.5%;
+    }
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+}
+
+.skills-container {
+  @include edContainer;
+  text-align: center;
+}

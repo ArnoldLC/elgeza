@@ -1,0 +1,17 @@
+.contact-us {
+  background: var(--bg-image) center center;
+  background-size: cover;
+  margin: 0;
+  padding: 4rem 1rem;
+  &__description {
+    color: var(--white);
+    text-align: center;
+  }
+}
+
+.contact-us-container {
+  @include edContainer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

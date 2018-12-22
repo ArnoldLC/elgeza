@@ -1,0 +1,22 @@
+.banner-altern {
+  background: var(--bg-image) center center;
+  background-size: cover;
+  padding-top: 4rem;
+  @include from(m) {
+    padding-top: 8rem;
+  }
+  @include from(l) {
+    padding-top: 16rem;
+  } 
+  &__title {
+    color: var(--white);
+    padding: 0 1rem;
+    @include from(l) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.banner-altern-container {
+  @include edContainer;
+}

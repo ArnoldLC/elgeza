@@ -5,4 +5,17 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  include /includes/main-menu
+  section.contact
+    .contact-container
+      h2.contact__title Contáctanos
+        hr
+      .form-container  
+        form.contact__form
+          input(type="text" placeholder="Nombre", required).contact__input
+          input(type="text" placeholder="Apellido", required).contact__input
+          input(type="text" placeholder="Servicio", required).contact__input
+          input(type="tel", name="", placeholder="Teléfono", required).contact__input
+          input(type="email", placeholder="Correo electrónico", required).contact__input
+          textarea(name="", cols="30", rows="10", placeholder="Mensaje", required).contact__input
+          button(class="button button--guinda") Enviar
+  include /includes/map

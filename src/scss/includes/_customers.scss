@@ -1,0 +1,33 @@
+.customers {
+  &__title {
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+  }
+}
+
+.customers-container {
+  @include edContainer;
+  justify-content: center;
+}
+
+.swiper-container {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  background-color: var(--color-bg-primary);
+  border-radius: 100%;
+}
+
+.swiper-button-next {
+  background-image: url(/assets/img/arrow-right.svg);
+}
+
+.swiper-button-prev {
+  background-image: url(/assets/img/arrow-left.svg);
+}

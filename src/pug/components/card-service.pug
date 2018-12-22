@@ -1,0 +1,7 @@
+mixin cardService(iconUrl, title, description, link)
+  .card
+    .card-container
+      img(src=`${iconUrl}`, alt="Icono").card__icon
+      h3.card__title=title
+      p.card__description=description
+      a(class!=attributes.class href=`${link}`) Leer más

@@ -1,0 +1,34 @@
+.service {
+  padding: 2rem 0;
+  &__title {
+    @include edItem(100);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1em;
+    @include from(l) {
+      font-size: 2rem;
+    }
+  }
+
+  &__description {
+    @include edItem(100);
+    color: var(--gray);
+    display: inline-flex;
+    line-height: 24px;
+    margin-left: 1rem;
+    position: relative;
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: .625em;
+      height: 3em;
+      left: 0;
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+.service-container {
+  @include edContainer;
+}

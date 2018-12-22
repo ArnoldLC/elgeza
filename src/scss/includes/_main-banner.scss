@@ -1,0 +1,43 @@
+.main-banner {
+  background: var(--bg-image) center center;
+  background-size: cover;
+  padding: 8rem 0;
+}
+
+.banner-container {
+  @include edContainer;
+  position: relative;
+  h1, p {
+    @include edItem(100);
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    @include from(m) {
+      font-size: 2.25rem;
+    }
+    @include from(l) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    @include from(m) {
+      font-size: 1.25rem;
+    }
+  }
+
+  br {
+    display: none;
+    @include from(m) {
+      display: block;
+    }
+  }
+}
+
+.main-banner {
+  color: var(--white);
+}

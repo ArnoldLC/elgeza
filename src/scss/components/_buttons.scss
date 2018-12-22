@@ -1,0 +1,29 @@
+button.button, a.button {
+  background: transparent;
+  border-radius: 1rem;
+  padding: .5em 4em;
+  @include from(m) {
+    padding: .5em 2em;
+  }
+  @include from(l) {
+    padding: .5em 4em;
+  }
+}
+
+button.button--guinda, a.button--guinda {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  &:hover {
+    background-color: var(--color-second);
+    color: var(--color-primary);
+  }
+}
+
+button.button--yellow, a.button--yellow {
+  border: 1px solid var(--color-second);
+  color: var(--color-second);
+  &:hover {
+    background: var(--color-second);
+    color: var(--white);
+  }
+}
