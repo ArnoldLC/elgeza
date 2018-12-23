@@ -30,23 +30,44 @@
 .footer {
   &__info {
     @include edItem(100, 100, 1/3);
+    @include edContainer;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__services {
     @include edItem(100, 100, 1/3);
+    @include edContainer;
+    flex-direction: column;
   }
 
   &__contact {
     @include edItem(100, 100, 1/3);
+    @include edContainer;
+    flex-direction: column;
   }
 
   &__description {
     text-align: center;
   }
 
+  &__section-brand {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-second);
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+
   &__section-title {
     text-align: center;
     margin-bottom: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include from(l) {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
   }
 }
 

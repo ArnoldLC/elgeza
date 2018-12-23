@@ -6,7 +6,6 @@
   }
   &__title {
     width: 100%;
-    font-family: 'Cocogoose Regular';
     font-size: 2.5rem;
   }
 }
@@ -20,5 +19,8 @@
   }
   h2 {
     font-size: 1em;
+    @include from(l) {
+      font-size: 1em;
+    }
   }
 }

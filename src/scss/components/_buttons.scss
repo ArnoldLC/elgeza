@@ -27,3 +27,10 @@ button.button--yellow, a.button--yellow {
     color: var(--white);
   }
 }
+
+button.button-contact {
+  &:hover {
+    background: var(--color-primary);
+    color: var(--white);
+  }
+}
