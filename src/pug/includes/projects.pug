@@ -1,5 +1,10 @@
+include ../components/project.pug
 section.projects
-  .projects-container
-    .swiper-container.swiper-container--projects
-      .swiper-wrapper
-        .swiper-slide
+  .swiper-container.swiper-container--projects
+    .swiper-wrapper
+      .swiper-slide
+        +project('Mantenimiento de Tableros', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde inventore dolore temporibus quo distinctio suscipit! Pariatur, fuga provident vero et distinctio, voluptate asperiores accusantium cupiditate quam fugiat quisquam sapiente nobis.', '#', 'assets/img/imagen_servicios.png', 'Imagen')
+      .swiper-slide
+        +project('Tarrajeado de rostros', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus impedit sunt veritatis, molestias natus quibusdam vitae numquam, animi asperiores voluptates quidem deserunt, nobis quam!', '#', 'assets/img/nosotros.png', 'Imagen')
+    .swiper-button-prev.swiper-button-prev--projects
+    .swiper-button-next.swiper-button-next--projects

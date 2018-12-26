@@ -36,5 +36,20 @@ if(!document.querySelector('.customers')) {
         slidesPerView: 5
       }
     }
-  }); 
+  });
+}
+
+if(document.querySelector('.projects')) {
+  const mySwiper = new Swiper('.swiper-container--projects', {
+    autoplay: {
+      delay: 20000,
+    },
+    loop: true,
+    speed: 500,
+    navigation: {
+      nextEl: '.swiper-button-next.swiper-button-next--projects',
+      prevEl: '.swiper-button-prev.swiper-button-prev--projects',
+    },
+    autoHeight: true,
+  })
 }

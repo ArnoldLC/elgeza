@@ -1,0 +1,35 @@
+.projects {
+  background: linear-gradient(to right, var(--color-primary) 50%, var(--white) 50%);
+  @include to(l) {
+    background: var(--color-primary);
+  }
+}
+
+.swiper-button-prev--projects,
+.swiper-button-next--projects {
+  top: 95%;
+  background-color: var(--color-primary);
+}
+.swiper-button-prev--projects {
+  left: 40%;
+  background-color: var(--white);
+  background-image: url('/assets/img/arrow-leftv2.svg');
+  @include from(l) {
+    left: 45%;
+  }
+  &:hover {
+    background-color: var(--color-primary);
+  background-image: url('/assets/img/arrow-left.svg');
+  }
+}
+.swiper-button-next--projects {
+  right: 40%;
+  background-image: url('/assets/img/arrow-right.svg');
+  @include from(l) {
+    right: 45%;
+  }
+  &:hover {
+    background-image: url('/assets/img/arrow-rightv2.svg');
+    background-color: var(--white);
+  }
+}
