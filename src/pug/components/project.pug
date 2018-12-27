@@ -1,0 +1,10 @@
+mixin project(name, description, link, imageURL, imageALT)
+  .projects__container
+    .projects__child.projects__description
+      h2.projects__title Nuestros Proyectos
+      h3.project__name=name
+      p.project__description= description
+      a(href=`${link}`).project__button Ver Proyecto
+    .projects__child.projects__image
+      .projects__image__container
+        img(src=`${imageURL}`, alt=`${imageALT}`)

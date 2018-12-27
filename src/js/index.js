@@ -53,3 +53,4 @@ if(!document.querySelector('.projects')) {
     },
   })
 }
+
