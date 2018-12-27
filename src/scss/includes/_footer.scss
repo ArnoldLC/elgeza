@@ -49,6 +49,9 @@
 
   &__description {
     text-align: center;
+    @include from (l) {
+      margin-top: -5rem;
+    }
   }
 
   &__section-brand {
@@ -57,6 +60,9 @@
     color: var(--color-second);
     text-align: center;
     margin-bottom: .5rem;
+    @include from(l) {
+      margin-top: -2rem;
+    }
   }
 
   &__section-title {
@@ -83,6 +89,14 @@
   @include from(l) {
     display: flex;
   }
+
+  ul:first-child {
+    margin: 0;
+    @include from(l) {
+      margin-bottom: calc(var(--vertical-content-space)*1.5);
+    }
+  }
+
   .vineta {
     display: inline-block;
     width: 8px;

@@ -38,3 +38,18 @@ if(!document.querySelector('.customers')) {
     }
   }); 
 }
+
+if(!document.querySelector('.projects')) {
+
+} else {
+  let projectsSlider = new Swiper('.swiper-container--projects', {
+    loop: true,
+    slidesPerColumn: 1,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+}
