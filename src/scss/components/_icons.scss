@@ -1,0 +1,30 @@
+[class^=icon] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: .5rem;
+}
+
+.icon-map {
+  background: url(/assets/img/map.svg) center center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.icon-phone {
+  background: url(/assets/img/phone.svg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-fb {
+  background: url(/assets/img/fb.svg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon-mail {
+  background: url(/assets/img/mail.svg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

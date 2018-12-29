@@ -2,12 +2,12 @@
   This boilerplate is based in ITCSS and SMACSS
 */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800');
-@font-face {
-  font-family: 'Cocogoose', 'Renogare', 'Raleway';
-  src: url('../fonts/Cocogoose Pro-trial.ttf') format('truetype'),
-      url('../fonts/Cocogoose Pro-trial.ttf') format('woff');
-      // url('../fonts/Renogare.ttf');
-}
+// @font-face {
+//   font-family: 'Cocogoose', 'Renogare', 'Raleway';
+//   src: url('../fonts/Cocogoose Pro-trial.ttf') format('truetype'),
+//       url('../fonts/Cocogoose Pro-trial.ttf') format('woff');
+//       // url('../fonts/Renogare.ttf');
+// }
 
 @import "~ed-grid/ed-grid";
 @import "~swiper/dist/css/swiper";
@@ -33,6 +33,8 @@
 @import "components/skill-item";
 @import "components/banner-altern";
 @import "components/project";
+@import "components/icons";
+@import "components/animations";
 
 // INCLUDES
 @import "includes/main-banner";

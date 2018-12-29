@@ -88,12 +88,19 @@
   text-align: center;
   @include from(l) {
     display: flex;
+    justify-content: space-around;
   }
 
   ul:first-child {
     margin: 0;
     @include from(l) {
       margin-bottom: calc(var(--vertical-content-space)*1.5);
+    }
+  }
+
+  li {
+    @include from(l) {
+      margin-bottom: .5rem;
     }
   }
 
@@ -108,10 +115,26 @@
 }
 
 .footer__contact {
+  .footer__section-title {
+    @include from (l) {
+      text-align: left;
+    }
+  }
+  @include from(l) {
+    width: 27%;
+  }
   li {
     text-align: center;
     @include from(l) {
+      display: flex;
+      margin-bottom: .25rem;
       text-align: left;
     }
+  }
+}
+
+.footer__services {
+  @include from (l) {
+    flex-grow: 1;
   }
 }

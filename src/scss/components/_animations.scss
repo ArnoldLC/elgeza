@@ -1,0 +1,49 @@
+@keyframes fromDown {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromTop {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromCenter {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.fade-in-dt {
+  animation-name: fromDown;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-td {
+  animation-name: fromTop;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fade-center {
+  animation-name: fromCenter;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}

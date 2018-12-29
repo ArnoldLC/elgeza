@@ -1,10 +1,18 @@
 import Swiper from "swiper"
 import {saludo, despedida} from "./modules/example"
 import {activeMenu} from './modules/active-menu'
+import {showNav} from './modules/show-nav'
+import {fixedNav} from './modules/fixed-nav'
+import {dropdown} from './modules/dropdown-menu'
+import {fadeIn} from './modules/fade-in'
 
 // saludo()
 // despedida()
 activeMenu()
+showNav()
+fixedNav()
+dropdown()
+fadeIn()
 
 if(!document.querySelector('.customers')) {
 

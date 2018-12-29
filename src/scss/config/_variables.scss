@@ -1,6 +1,8 @@
 // Typography
 $font-family: 'Raleway', 'Cocogoose', 'sans-serif';
 
+$white: #fff;
+
 :root {
   --bg-image: url(../img/inicio.png);
   --color-primary: #7f1430;
@@ -9,5 +11,10 @@ $font-family: 'Raleway', 'Cocogoose', 'sans-serif';
   --color-bg-second: #d98b18;
   --black: #000;
   --white: #fff;
-  --gray: #606060; 
+  --gray: #606060;
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; 
 }
