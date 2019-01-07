@@ -153,7 +153,7 @@ gulp.task('sitemap', () => {
     read: false
   })
     .pipe(sitemap({
-      siteUrl: 'https://example.com' // remplazar por tu dominio
+      siteUrl: 'https://elgeza.com' // remplazar por tu dominio
     }))
     .pipe(gulp.dest('./public'))
 })
@@ -180,4 +180,10 @@ gulp.task('cache', () => {
 })
 
 
-gulp.task('build', ['styles-build', 'pug-build', 'scripts-build', 'images-build', 'cache', 'sitemap'])
+gulp.task('build', ['styles-build', 'pug-build', 'scripts-build', 'images-build', 'cache', 'sitemap'], () => {
+  server.init({
+    server: {
+      baseDir: './public'
+    }
+  })
+})
