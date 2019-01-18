@@ -1,5 +1,5 @@
 .banner-altern {
-  background: var(--bg-image) center center;
+  background: linear-gradient(rgba(#000, .7), rgba(#000, .7)), var(--bg-image) center center;
   background-size: cover;
   padding-top: 4rem;
   @include from(m) {

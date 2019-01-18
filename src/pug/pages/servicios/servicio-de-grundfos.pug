@@ -9,8 +9,13 @@ block main
   main.service
     .service-container
       h3.service__title Servicio técnico autorizado de Grundfos
-      p.service__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?
-  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+      p.service__description Grundfos es un fabricante de bombas, con sede en Dinamarca, con más de 19,000 empleados en todo el mundo. La producción anual de más de 16 millones de unidades de bombeo, bobmas de circulación, bombas sumergibles y bombas cetrigufas.
+    .service-images
+      h3.service-images__title Equipo técnico profesional altamente capacitado para ofrecerle un servicio de calidad.
+      +imagesService('/assets/img/grundfos-1.jpg', 'Servicio profesional de Grundfos', 'Servicio profesional de Grundfos')
+      +imagesService('/assets/img/grundfos-2.jpg', 'Servicio profesional de Grundfos', 'Servicio profesional de Grundfos')
+      +imagesService('/assets/img/grundfos-3.jpg', 'Servicio profesional de Grundfos', 'Servicio profesional de Grundfos')
+  section.contact-us(style='--bg-image: url(/assets/img/grundfos-contact.jpg);')
     .contact-us-container
       p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
       a.button.button--yellow(href="/contacto.html") Contáctanos Ahora

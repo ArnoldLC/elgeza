@@ -5,12 +5,18 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  +bannerAltern('/assets/img/servicios.png', 'Servicios')
+  +bannerAltern('/assets/img/rebobinado-banner.jpg', 'Servicios')
   main.service
     .service-container
       h3.service__title Rebobinado de motores
-      p.service__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?
-  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+      p.service__description Te brindamos el mejor mantenimiento de rebobinado de motores en Trujillo. Con el rebobinado de motores conseguimos dar servicio a muchas empresas que siguen confiando en nuestras reparaciones tras amplios años de experiencia. Se brinda soluciones de inmediato a los motores de nuestros clientes. Contamos con toda la maquinaria necesaria para la reparación de distintos tipos de bobinados eléctricos y máquinas para elaboración de bobinas totalmente automatizadas.
+    .service-images
+      h3.service-images__title Equipo técnico profesional altamente capacitado para ofrecerte un servicio de caldidad
+      +imagesService('/assets/img/rebobinado-1.jpg', 'Rebobinado de motores', 'Rebobinado de motores')
+      +imagesService('/assets/img/rebobinado-2.jpg', 'Rebobinado de motores', 'Rebobinado de motores')
+      +imagesService('/assets/img/rebobinado-3.jpg', 'Rebobinado de motores', 'Rebobinado de motores')
+      +imagesService('/assets/img/rebobinado-4.jpg', 'Rebobinado de motores', 'Rebobinado de motores')
+  section.contact-us(style='--bg-image: url(/assets/img/rebobinado-contact.jpg);')
     .contact-us-container
       p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
       a.button.button--yellow(href="/contacto.html") Contáctanos Ahora

@@ -9,7 +9,7 @@
     <meta property="og:title" content="Home">
     <meta property="og:description" content="Pagina inicial de EDboilerplate">
     <meta property="og:image" content="https://ed.team/sites/default/files/EDboilerplate-logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css?t=1546879209857">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
@@ -71,15 +71,21 @@
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
-        var uluru = {lat: -25.344, lng: 131.036};
+        var uluru = {lat: -8.1060506, lng: -79.0142701};
         // The map, centered at Uluru
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 17,
           center: uluru,
           disableDefaultUI: true,
         });
         // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: uluru, map: map});
+        var marker = new google.maps.Marker(
+          {
+            position: uluru, 
+            map: map,
+            title: 'ELGEZA'
+          }
+        );
       }
     </script>
     <footer class="footer">
@@ -87,20 +93,21 @@
         <div class="main-footer">
           <div class="footer__info">
             <div class="footer__section-brand">elgeza</div>
-            <p class="footer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ea dolore, non qui minima eius magni possimus? Tenetur, alias laboriosam?</p>
+            <p class="footer__description">Utilizamos todas las herramientas en nuestro arsenal para brindar un buen servicio de calidad a todos nuestros clientes de una manera especial con nuestra experiencia.</p>
           </div>
           <div class="footer__services">
             <div class="footer__section-title">Servicios</div>
             <div class="services-list">
               <ul>
                 <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
+                <li><span class="vineta"></span>Transformadores de potencia</li>
+                <li><span class="vineta"></span>Electrobombas sumergibles</li>
+                <li><span class="vineta"></span>Tableros Eléctricos de Control</li>
               </ul>
               <ul>
-                <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
+                <li><span class="vineta"></span>Grupos Electrógenos</li>
+                <li><span class="vineta"></span>Instalaciones Eléctricas</li>
+                <li><span class="vineta"></span>Servicio Técnico Grundfos</li>
               </ul>
             </div>
           </div>
@@ -125,7 +132,7 @@
         </div>
       </div>
     </footer>
-    <script src="/assets/js/scripts-min.js?t=1546879209857"></script>
+    <script src="/assets/js/scripts-min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJaROzUzJ-qXI_qbJoWj-jNscP-ytigQ&amp;callback=initMap"></script>
   </body>
 </html>

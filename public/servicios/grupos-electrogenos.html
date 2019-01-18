@@ -9,7 +9,7 @@
     <meta property="og:title" content="Home">
     <meta property="og:description" content="Pagina inicial de EDboilerplate">
     <meta property="og:image" content="https://ed.team/sites/default/files/EDboilerplate-logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css?t=1546879210242">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
@@ -44,7 +44,7 @@
         </div>
       </div>
     </header>
-    <div class="banner-altern" style="--bg-image: url(/assets/img/servicios.png)">
+    <div class="banner-altern" style="--bg-image: url(/assets/img/electrogenos-banner.jpg)">
       <div class="banner-altern-container">
         <h1 class="banner-altern__title">Servicios</h1>
       </div>
@@ -52,10 +52,25 @@
     <main class="service">
       <div class="service-container">
         <h3 class="service__title">Grupos electrógenos</h3>
-        <p class="service__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?</p>
+        <p class="service__description">Nos enfocamos en darle el servicio de mantenimiento y reparación a sus grupos electrógenos, tableros de transferencia aplicando la experiencia y calidad que nos caracteriza. También ofrecemos la instalación de grupos electrógenos con la experiencia que nos caracteriza ELGEZA.</p>
+      </div>
+      <div class="service-images">
+        <h3 class="service-images__title">Mantenimiento y reparación de grupos electrógenos</h3>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/electrogenos-1.jpg" alt="Grupos electrógenos"/>
+          <p class="service-image__description">Grupos electrógenos</p>
+        </div>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/electrogenos-2.jpg" alt="Grupos electrógenos"/>
+          <p class="service-image__description">Grupos electrógenos</p>
+        </div>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/electrogenos-3.jpg" alt="Grupos electrógenos"/>
+          <p class="service-image__description">Grupos electrógenos</p>
+        </div>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/electrogenos-4.jpg" alt="Grupos electrógenos"/>
+          <p class="service-image__description">Grupos electrógenos</p>
+        </div>
       </div>
     </main>
-    <section class="contact-us" style="--bg-image: url(/assets/img/elgeza.png);">
+    <section class="contact-us" style="--bg-image: url(/assets/img/electrogenos-contact.jpg);">
       <div class="contact-us-container">
         <p class="contact-us__description">Solicita este servicio y nos pondremos en contacto contigo</p><a class="button button--yellow" href="/contacto.html">Contáctanos Ahora</a>
       </div>
@@ -69,15 +84,21 @@
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
-        var uluru = {lat: -25.344, lng: 131.036};
+        var uluru = {lat: -8.1060506, lng: -79.0142701};
         // The map, centered at Uluru
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 17,
           center: uluru,
           disableDefaultUI: true,
         });
         // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({position: uluru, map: map});
+        var marker = new google.maps.Marker(
+          {
+            position: uluru, 
+            map: map,
+            title: 'ELGEZA'
+          }
+        );
       }
     </script>
     <footer class="footer">
@@ -85,20 +106,21 @@
         <div class="main-footer">
           <div class="footer__info">
             <div class="footer__section-brand">elgeza</div>
-            <p class="footer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ea dolore, non qui minima eius magni possimus? Tenetur, alias laboriosam?</p>
+            <p class="footer__description">Utilizamos todas las herramientas en nuestro arsenal para brindar un buen servicio de calidad a todos nuestros clientes de una manera especial con nuestra experiencia.</p>
           </div>
           <div class="footer__services">
             <div class="footer__section-title">Servicios</div>
             <div class="services-list">
               <ul>
                 <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
+                <li><span class="vineta"></span>Transformadores de potencia</li>
+                <li><span class="vineta"></span>Electrobombas sumergibles</li>
+                <li><span class="vineta"></span>Tableros Eléctricos de Control</li>
               </ul>
               <ul>
-                <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
-                <li><span class="vineta"></span>Reparación de motores</li>
+                <li><span class="vineta"></span>Grupos Electrógenos</li>
+                <li><span class="vineta"></span>Instalaciones Eléctricas</li>
+                <li><span class="vineta"></span>Servicio Técnico Grundfos</li>
               </ul>
             </div>
           </div>
@@ -123,7 +145,7 @@
         </div>
       </div>
     </footer>
-    <script src="/assets/js/scripts-min.js?t=1546879210242"></script>
+    <script src="/assets/js/scripts-min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJaROzUzJ-qXI_qbJoWj-jNscP-ytigQ&amp;callback=initMap"></script>
   </body>
 </html>

@@ -5,12 +5,17 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  +bannerAltern('/assets/img/servicios.png', 'Servicios')
+  +bannerAltern('/assets/img/transformadores-banner.jpg', 'Servicios')
   main.service
     .service-container
       h3.service__title Transformadores de potencia
-      p.service__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?
-  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+      p.service__description Nuestros productos son diseñados y construidos por un excelente plantel de profesionales en la ciudad de Trujillo, siendo garantizada por nuestra amplia experiencia en transformadores eléctricos. Los transformadores de gran potencia son proyectados para garantizar alta funcionalidad en las más diversas aplicaciones y sectores del mercado, satisfaciendo las necesidades específicas de las empresas de energía y del sector industrial en general.
+    .service-images
+      h3.service-images__title Con amplia experiencia en reparación, especializado en la fabricación de transformadores eléctricos.
+      +imagesService('/assets/img/transformadores-1.jpg', 'Transformadores de potencia', 'Transformadores de potencia', '80%')
+      +imagesService('/assets/img/transformadores-2.jpg', 'Transformadores de potencia', 'Transformadores de potencia')
+      +imagesService('/assets/img/transformadores-3.jpg', 'Transformadores de potencia', 'Transformadores de potencia')
+  section.contact-us(style='--bg-image: url(/assets/img/transformadores-contact.jpg);')
     .contact-us-container
       p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
       a.button.button--yellow(href="/contacto.html") Contáctanos Ahora

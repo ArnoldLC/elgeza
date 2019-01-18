@@ -5,12 +5,18 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  +bannerAltern('/assets/img/servicios.png', 'Servicios')
+  +bannerAltern('/assets/img/electrogenos-banner.jpg', 'Servicios')
   main.service
     .service-container
       h3.service__title Grupos electrógenos
-      p.service__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?
-  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+      p.service__description Nos enfocamos en darle el servicio de mantenimiento y reparación a sus grupos electrógenos, tableros de transferencia aplicando la experiencia y calidad que nos caracteriza. También ofrecemos la instalación de grupos electrógenos con la experiencia que nos caracteriza ELGEZA.
+    .service-images
+      h3.service-images__title Mantenimiento y reparación de grupos electrógenos
+      +imagesService('/assets/img/electrogenos-1.jpg', 'Grupos electrógenos', 'Grupos electrógenos')
+      +imagesService('/assets/img/electrogenos-2.jpg', 'Grupos electrógenos', 'Grupos electrógenos')
+      +imagesService('/assets/img/electrogenos-3.jpg', 'Grupos electrógenos', 'Grupos electrógenos')
+      +imagesService('/assets/img/electrogenos-4.jpg', 'Grupos electrógenos', 'Grupos electrógenos')
+  section.contact-us(style='--bg-image: url(/assets/img/electrogenos-contact.jpg);')
     .contact-us-container
       p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
       a.button.button--yellow(href="/contacto.html") Contáctanos Ahora

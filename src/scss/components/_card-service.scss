@@ -10,6 +10,9 @@
 .services-container {
   @include edContainer;
   text-align: center;
+  @include from(m) {
+    justify-content: space-around;
+  }
 }
 
 .services {
@@ -20,12 +23,18 @@
 
 .card {
   @include edContainer;
-  @include edItem(100, 1/3, 1/4);
+  @include edItem(100, 1/2, 1/4);
   margin-bottom: 2rem;
   &__icon {
     background: var(--color-primary);
     padding: 1rem;
     border-radius: 100%;
+  }
+
+  &__title {
+    @include from (l) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__description {

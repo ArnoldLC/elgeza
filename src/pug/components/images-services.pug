@@ -1,0 +1,4 @@
+mixin imagesService(path, txtalt, description, width)
+  .service-image(style=`width: ${width};`)
+    img(src=`${path}`, alt=`${txtalt}`)
+    p.service-image__description=description

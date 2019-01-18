@@ -5,12 +5,18 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  +bannerAltern('/assets/img/servicios.png', 'Servicios')
+  +bannerAltern('/assets/img/instalaciones-banner.jpg', 'Servicios')
   main.service
     .service-container
       h3.service__title Instalaciones eléctricas
-      p.service__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?
-  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+      p.service__description Nuestro objetivo es identificar y aplicar los principios tecnológicos de instalaciones eléctricas. Planificar las tareas de operación y tiempos de ejecución de Instalaciones Eléctricas. Organizar los materiales y equipos. Realizar tareas y procesos básicos para la prestación de servicios en reparación y ejecución de Instalaciones Eléctricas.
+    .service-images
+      h3.service-images__title Montaje y mantenimiento de infraestructuras eléctricas mediante la aplicación de normativas y reglamentaciones vigentes, así como protocolos de calidad, seguridad y riesgos laborales.
+      +imagesService('/assets/img/instalaciones-1.jpg', 'Instalaciones eléctricas', 'Instalaciones eléctricas')
+      +imagesService('/assets/img/instalaciones-2.jpg', 'Instalaciones eléctricas', 'Instalaciones eléctricas')
+      +imagesService('/assets/img/instalaciones-3.jpg', 'Instalaciones eléctricas', 'Instalaciones eléctricas')
+      +imagesService('/assets/img/instalaciones-4.jpg', 'Instalaciones eléctricas', 'Instalaciones eléctricas')
+  section.contact-us(style='--bg-image: url(/assets/img/instalaciones-contact.jpg);')
     .contact-us-container
       p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
       a.button.button--yellow(href="/contacto.html") Contáctanos Ahora

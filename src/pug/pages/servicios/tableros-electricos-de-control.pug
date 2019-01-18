@@ -5,12 +5,18 @@ append config
   -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
 
 block main
-  +bannerAltern('/assets/img/servicios.png', 'Servicios')
+  +bannerAltern('/assets/img/tableros-banner.jpg', 'Servicios')
   main.service
     .service-container
       h3.service__title Tableros electrónicos de control
-      p.service__description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae neque sit eum, excepturi quo officia voluptate id iure incidunt, reprehenderit amet consequatur et rerum ex itaque aliquam. Quas, perferendis impedit dolorum fugit dolor nihil suscipit natus doloribus beatae harum?
-  section.contact-us(style='--bg-image: url(/assets/img/elgeza.png);')
+      p.service__description En la ciudad de Trujillo, ELGEZA diseña y fabrica tableros de control para todo tipo de ambiente. Nos encargamos del montaje y mantenimiento asi como la construcción de estos mismos. Garantizamos la seguridad bajo las normas que se han establecido. Protegemos los equipos de las condiciones ambientales o propias del proceso de producción.
+    .service-images
+      h3.service-images__title Equipo técnico profesional altamente capacitado para ofrecerte un servicio de caldidad
+      +imagesService('/assets/img/tableros-1.jpg', 'Tableros electrónicos de control', 'Tableros electrónicos de control')
+      +imagesService('/assets/img/tableros-2.jpg', 'Tableros electrónicos de control', 'Tableros electrónicos de control')
+      +imagesService('/assets/img/tableros-3.jpg', 'Tableros electrónicos de control', 'Tableros electrónicos de control')
+      +imagesService('/assets/img/tableros-4.jpg', 'Tableros electrónicos de control', 'Tableros electrónicos de control')
+  section.contact-us(style='--bg-image: url(/assets/img/tableros-contact.jpg);')
     .contact-us-container
       p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
       a.button.button--yellow(href="/contacto.html") Contáctanos Ahora
