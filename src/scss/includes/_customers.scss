@@ -4,6 +4,8 @@
     color: var(--color-primary);
     margin-bottom: 2rem;
   }
+
+  
 }
 
 .customers-container {
@@ -15,6 +17,22 @@
   margin: 0;
   width: 100%;
   text-align: center;
+
+  &--customers {
+    .swiper-button-next, .swiper-button-prev {
+      @include from(l) {
+        opacity: 0;
+        transition: all .4s linear;
+      }
+    }
+    &:hover {
+      .swiper-button-next, .swiper-button-prev {
+        @include from(l) {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 .swiper-button-prev, .swiper-button-next {

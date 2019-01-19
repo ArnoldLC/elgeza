@@ -15,11 +15,14 @@ script.
       disableDefaultUI: true,
     });
     // The marker, positioned at Uluru
+    var image = '/assets/img/marker.png'
     var marker = new google.maps.Marker(
       {
         position: uluru, 
         map: map,
-        title: 'ELGEZA'
+        title: 'ELGEZA',
+        icon: image,
+        animation: google.maps.Animation.DROP,
       }
     );
   }

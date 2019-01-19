@@ -8561,6 +8561,9 @@ if (!document.querySelector('.customers')) {} else {
     slidesPerColumn: 1,
     preloadImages: false,
     watchSlidesVisibility: true,
+    autoplay: {
+      delay: 3000
+    },
     lazy: {
       loadPrevNext: true
     },
@@ -8591,6 +8594,9 @@ if (!document.querySelector('.projects')) {} else {
     slidesPerColumn: 1,
     slidesPerView: 1,
     spaceBetween: 0,
+    autoplay: {
+      delay: 5000
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'

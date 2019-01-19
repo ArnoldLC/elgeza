@@ -29,9 +29,7 @@
                   <li><a href="/servicios/electrobombas-sumergibles.html">Electrobombas sumergibles</a></li>
                   <li><a href="/servicios/grupos-electrogenos.html">Grupos electrógenos</a></li>
                   <li><a href="/servicios/instalaciones-electricas.html">Instalaciones eléctricas</a></li>
-                  <li><a href="/servicios/paneles-solares.html">Paneles solares</a></li>
                   <li><a href="/servicios/rebobinado-de-motores.html">Rebobinado de motores</a></li>
-                  <li><a href="/servicios/reparacion-equipos-electromecanicos.html">Reparación de equipos electromecánicos</a></li>
                   <li><a href="/servicios/servicio-de-grundfos.html">Servicio de grundfos</a></li>
                   <li><a href="/servicios/tableros-electricos-de-control.html">Tableros electrónicos de control</a></li>
                   <li><a href="/servicios/transformadores-de-potencia.html">Transformadores de potencia</a></li>
@@ -79,11 +77,14 @@
           disableDefaultUI: true,
         });
         // The marker, positioned at Uluru
+        var image = '/assets/img/marker.png'
         var marker = new google.maps.Marker(
           {
             position: uluru, 
             map: map,
-            title: 'ELGEZA'
+            title: 'ELGEZA',
+            icon: image,
+            animation: google.maps.Animation.DROP,
           }
         );
       }
