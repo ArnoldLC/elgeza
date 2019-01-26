@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Home | Elgeza</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina inicial de EDboilerplate">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta property="og:title">
+    <meta property="og:description" content="Pagina inicial de EDboilerplate">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url">
+    <meta property="og:image">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="stylesheet" href="/assets/css/styles.css?t=1548519538369">
+    <link rel="shortcut icon" href="/assets/img/icon-servicios.png">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://elgeza.com/",
+        "logo": "https://elgeza.com/assets/img/icon-servicios.png",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+51992280087",
+          "areaServed": "PE",
+          "availableLanguage": "Spanish",
+          "contactType": "sales"
+        }],
+        "sameAs": "https://www.facebook.com/ElgezaaPERU/"
+      }
+      
+    </script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="header-brand"><a href="/">elgeza</a></div>
+        <div class="main-menu-toggle"></div>
+        <div class="header-links">
+          <nav class="main-menu" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-menu">
+            <ul>
+              <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="/" itemprop="name">Inicio</a>
+              </li>
+              <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="/nosotros.html" itemprop="name">Nosotros</a>
+              </li>
+              <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="#" itemprop="name">Servicios</a>
+                <ul>
+                  <li><a href="/servicios/electrobombas-sumergibles.html">Electrobombas sumergibles</a></li>
+                  <li><a href="/servicios/grupos-electrogenos.html">Grupos electrógenos</a></li>
+                  <li><a href="/servicios/instalaciones-electricas.html">Instalaciones eléctricas</a></li>
+                  <li><a href="/servicios/rebobinado-de-motores.html">Rebobinado de motores</a></li>
+                  <li><a href="/servicios/servicio-de-grundfos.html">Servicio de grundfos</a></li>
+                  <li><a href="/servicios/tableros-electricos-de-control.html">Tableros electrónicos de control</a></li>
+                  <li><a href="/servicios/transformadores-de-potencia.html">Transformadores de potencia</a></li>
+                </ul>
+              </li>
+              <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="/contacto.html" itemprop="name">Contáctanos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="banner-altern" style="--bg-image: url(/assets/img/rebobinado-banner.jpg)">
+      <div class="banner-altern-container">
+        <h1 class="banner-altern__title">Servicios</h1>
+      </div>
+    </div>
+    <main class="service">
+      <div class="service-container">
+        <h3 class="service__title">Rebobinado de motores</h3>
+        <p class="service__description">Te brindamos el mejor mantenimiento de rebobinado de motores en Trujillo. Con el rebobinado de motores conseguimos dar servicio a muchas empresas que siguen confiando en nuestras reparaciones tras amplios años de experiencia. Se brinda soluciones de inmediato a los motores de nuestros clientes. Contamos con toda la maquinaria necesaria para la reparación de distintos tipos de bobinados eléctricos y máquinas para elaboración de bobinas totalmente automatizadas.</p>
+      </div>
+      <div class="service-images">
+        <h3 class="service-images__title">Equipo técnico profesional altamente capacitado para ofrecerte un servicio de caldidad</h3>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/rebobinado-1.jpg" alt="Rebobinado de motores"/>
+          <p class="service-image__description">Rebobinado de motores</p>
+        </div>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/rebobinado-2.jpg" alt="Rebobinado de motores"/>
+          <p class="service-image__description">Rebobinado de motores</p>
+        </div>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/rebobinado-3.jpg" alt="Rebobinado de motores"/>
+          <p class="service-image__description">Rebobinado de motores</p>
+        </div>
+        <div class="service-image" style="width: undefined;"><img src="/assets/img/rebobinado-4.jpg" alt="Rebobinado de motores"/>
+          <p class="service-image__description">Rebobinado de motores</p>
+        </div>
+      </div>
+    </main>
+    <section class="contact-us" style="--bg-image: url(/assets/img/rebobinado-contact.jpg);">
+      <div class="contact-us-container">
+        <p class="contact-us__description">Solicita este servicio y nos pondremos en contacto contigo</p><a class="button button--yellow" href="/contacto.html">Contáctanos Ahora</a>
+      </div>
+    </section>
+    <div class="map">
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -8.1060506, lng: -79.0142701};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru,
+          disableDefaultUI: true,
+        });
+        // The marker, positioned at Uluru
+        var image = '/assets/img/marker.png'
+        var marker = new google.maps.Marker(
+          {
+            position: uluru, 
+            map: map,
+            title: 'ELGEZA',
+            icon: image,
+            animation: google.maps.Animation.DROP,
+          }
+        );
+      }
+    </script>
+    <footer class="footer">
+      <div class="main-footer-container">
+        <div class="main-footer">
+          <div class="footer__info">
+            <div class="footer__section-brand">elgeza</div>
+            <p class="footer__description">Utilizamos todas las herramientas en nuestro arsenal para brindar un buen servicio de calidad a todos nuestros clientes de una manera especial con nuestra experiencia.</p>
+          </div>
+          <div class="footer__services">
+            <div class="footer__section-title">Servicios</div>
+            <div class="services-list">
+              <ul>
+                <li><span class="vineta"></span>Reparación de motores</li>
+                <li><span class="vineta"></span>Transformadores de potencia</li>
+                <li><span class="vineta"></span>Electrobombas sumergibles</li>
+                <li><span class="vineta"></span>Tableros Eléctricos de Control</li>
+              </ul>
+              <ul>
+                <li><span class="vineta"></span>Grupos Electrógenos</li>
+                <li><span class="vineta"></span>Instalaciones Eléctricas</li>
+                <li><span class="vineta"></span>Servicio Técnico Grundfos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__contact">
+            <div class="footer__section-title">Información de Contacto</div>
+            <ul>
+              <li>
+                 <span class="icon-map"></span>Av. César Vallejo 858 URB. Palermo<br>Trujillo - La Libertad</li>
+              <li>
+                <span class="icon-phone"></span><a href="tel:+51992280087">+51 992280087</a></li>
+              <li>
+                <span class="icon-fb"></span><a href="http://www.facebook.com">elgeza</a></li>
+              <li>
+                <span class="icon-mail"></span><a href="mailto:elgezaonline@gmail.com">elgezaonline@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="secondary-footer-container">
+        <div class="secondary-footer">
+          <p>Copyright - Desarrollado por <a href="https://www.tera.pe">Tera</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/scripts-min.js?t=1548519538369"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJaROzUzJ-qXI_qbJoWj-jNscP-ytigQ&amp;callback=initMap"></script>
+  </body>
+</html>

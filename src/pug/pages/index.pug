@@ -1,10 +1,24 @@
 extends /config/template
 append config
   -pageTitle = 'Home'
-  -pageDescription = 'Pagina inicial de EDboilerplate'
-  -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
+  -pageDescription = 'Vendemos y reparamos equipos electromecánicos, todo a cargo de un equipo de técnicos profesionales de muy alto nivel.'
+  -ogTitle = 'Home | Elgeza'
+  -ogUrl = 'https://elgeza.com/'
+  -ogImageUrl = 'https://elgeza.com/assets/img/seo/home.jpg'
+  -ogImageAlt = 'Home | Elgeza'
 
 block main
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Elgeza",
+        "item": "https://elgeza.com/"
+      }]
+    }
   include /includes/main-banner
   include /includes/services
   include /includes/projects

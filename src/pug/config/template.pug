@@ -7,17 +7,37 @@ block config
 doctype html
 html(lang="es")
   head
-    title My awesome title
+    title #{pageTitle} | #{siteName}
     meta(charset="utf-8")
+    meta(name="description" content=pageDescription)
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
-    meta(name="twitter:card" content="summary_large_image")
-    meta(name="twitter:site" content=twitterAccount)
-    meta(property="og:title" content=pageTitle)
+    meta(property="og:title" content=ogTitle)
     meta(property="og:description" content=pageDescription)
-    meta(property="og:image" content=pageImage)
+    meta(property="og:type" content="business.business")
+    meta(property="og:url" content=ogUrl)
+    meta(property="og:image" content=ogImageUrl)
+    meta(property="og:image:type" content="image/png")
+    meta(property="og:image:alt" content=ogImageAlt)
+    meta(property="og:image:width" content="1200")
+    meta(property="og:image:height" content="630")
     link(rel="stylesheet" href="/assets/css/styles.css")
-    link(rel="shortcut icon" href="img/favicon.png")
-    
+    link(rel="shortcut icon" href="/assets/img/icon-servicios.png")
+    script(type="application/ld+json").
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://elgeza.com/",
+        "logo": "https://elgeza.com/assets/img/icon-servicios.png",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+51992280087",
+          "areaServed": "PE",
+          "availableLanguage": "Spanish",
+          "contactType": "sales"
+        }],
+        "sameAs": "https://www.facebook.com/ElgezaaPERU/"
+      }
+
   body
     include /includes/top-bar
     block main
