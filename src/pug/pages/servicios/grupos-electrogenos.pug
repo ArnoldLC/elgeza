@@ -1,10 +1,34 @@
 extends /config/template
 append config
-  -pageTitle = 'Home'
-  -pageDescription = 'Pagina inicial de EDboilerplate'
-  -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
+  -pageTitle = 'Grupos Electrógenos'
+  -pageDescription = 'Mantenimiento y reparación a sus grupos electrógenos, tableros de transferencia aplicando la experiencia y calidad que nos caracteriza.'
+  -ogTitle = 'Grupos Electrógenos | Elgeza'
+  -ogUrl = 'https://elgeza.com/servicios/grupos-electrogenos.html'
+  -ogImageUrl = 'https://elgeza.com/assets/img/seo/electrogenos.jpg'
+  -ogImageAlt = 'Grupos Electrógenos | Elgeza'
 
 block main
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Elgeza",
+        "item": "https://elgeza.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Servicios",
+        "item": "https://elgeza.com/servicios.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Grupos Electrógenos",
+        "item": "https://elgeza.com/servicios/grupos-electrogenos.html"
+      }]
+    }
   +bannerAltern('/assets/img/electrogenos-banner.jpg', 'Servicios')
   main.service
     .service-container

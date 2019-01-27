@@ -1,10 +1,29 @@
 extends /config/template
 append config
-  -pageTitle = 'Home'
-  -pageDescription = 'Pagina inicial de EDboilerplate'
-  -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
+  -pageTitle = 'Nosotros'
+  -pageDescription = 'Diseñamos, reparamos, brindamos mantenimiento e implementamos proyectos con soluciones integrales para todo tipo de empresas.'
+  -ogTitle = 'Nosotros | Elgeza'
+  -ogUrl = 'https://elgeza.com/nosotros.html'
+  -ogImageUrl = 'https://elgeza.com/assets/img/seo/nosotros.jpg'
+  -ogImageAlt = 'Nosotros | Elgeza'
 
 block main
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Elgeza",
+        "item": "https://elgeza.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Nosotros",
+        "item": "https://elgeza.com/nosotros.html"
+      }]
+    }
   +bannerAltern('/assets/img/nosotros.png', 'Nosotros')
   main.about-us
     .about-us-container

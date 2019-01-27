@@ -1,10 +1,34 @@
 extends /config/template
 append config
-  -pageTitle = 'Home'
-  -pageDescription = 'Pagina inicial de EDboilerplate'
-  -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
+  -pageTitle = 'Tableros Electrónicos de Control'
+  -pageDescription = 'Nos encargamos del montaje y mantenimiento asi como la construcción de tableros de control para cualquier tipo de ambiente.'
+  -ogTitle = 'Tableros Electrónicos de Control | Elgeza'
+  -ogUrl = 'https://elgeza.com/servicios/tableros-electricos-de-control.html'
+  -ogImageUrl = 'https://elgeza.com/assets/img/seo/tableros.jpg'
+  -ogImageAlt = 'Tableros Electrónicos de Control | Elgeza'
 
 block main
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Elgeza",
+        "item": "https://elgeza.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Servicios",
+        "item": "https://elgeza.com/servicios.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Tableros Electrónicos de Control",
+        "item": "https://elgeza.com/servicios/tableros-electricos-de-control.html"
+      }]
+    }
   +bannerAltern('/assets/img/tableros-banner.jpg', 'Servicios')
   main.service
     .service-container

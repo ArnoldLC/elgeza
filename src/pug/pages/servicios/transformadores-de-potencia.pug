@@ -1,10 +1,35 @@
 extends /config/template
 append config
-  -pageTitle = 'Home'
-  -pageDescription = 'Pagina inicial de EDboilerplate'
-  -pageImage = 'https://ed.team/sites/default/files/EDboilerplate-logo.png'
+  -pageTitle = 'Transformadores de Potencia'
+  -pageDescription = 'Los transformadores de gran potencia son proyectados para garantizar alta funcionalidad en las más diversas aplicaciones y sectores del mercado.'
+  -ogTitle = 'Transformadores de Potencia | Elgeza'
+  -ogUrl = 'https://elgeza.com/servicios/transformadores-de-potencia.html'
+  -ogImageUrl = 'https://elgeza.com/assets/img/seo/transformadores.jpg'
+  -ogImageAlt = 'Transformadores de Potencia | Elgeza'
+
 
 block main
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Elgeza",
+        "item": "https://elgeza.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Servicios",
+        "item": "https://elgeza.com/servicios.html"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Transformadores de Potencia",
+        "item": "https://elgeza.com/servicios/transformadores-de-potencia.html"
+      }]
+    }
   +bannerAltern('/assets/img/transformadores-banner.jpg', 'Servicios')
   main.service
     .service-container
