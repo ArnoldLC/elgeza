@@ -29,12 +29,12 @@ block main
       h2.contact__title Contáctanos
         hr
       .form-container
-        form.contact__form
-          input(type="text" placeholder="Nombre", required).contact__input
-          input(type="text" placeholder="Apellido", required).contact__input
-          input(type="text" placeholder="Servicio", required).contact__input
-          input(type="tel", name="", placeholder="Teléfono", required).contact__input
-          input(type="email", placeholder="Correo electrónico", required).contact__input
-          textarea(name="", cols="30", rows="10", placeholder="Mensaje", required).contact__input
+        form(method="POST" action="https://formspree.io/elgezaonline@gmail.com").contact__form
+          input(type="text" placeholder="Nombre" name="nombre" required).contact__input
+          input(type="text" placeholder="Apellido" name="apellido" required).contact__input
+          input(type="text" placeholder="Servicio" name="servicio" required).contact__input
+          input(type="tel" placeholder="Teléfono" name="telefono" required).contact__input
+          input(type="email" placeholder="Correo electrónico" name="correo" required).contact__input
+          textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje",required).contact__input
           button(class="button button--guinda button-contact") Enviar
   include /includes/map

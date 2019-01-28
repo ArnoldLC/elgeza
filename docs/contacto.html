@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>My awesome title</title>
+    <title>Contáctanos | Elgeza</title>
     <meta charset="utf-8">
+    <meta name="description" content="Comunícate con nosotros a través de distintos tipos de medios.">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@edteamlat">
-    <meta property="og:title" content="Home">
-    <meta property="og:description" content="Pagina inicial de EDboilerplate">
-    <meta property="og:image" content="https://ed.team/sites/default/files/EDboilerplate-logo.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <meta property="og:title" content="Contáctanos | Elgeza">
+    <meta property="og:description" content="Comunícate con nosotros a través de distintos tipos de medios.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://elgeza.com/contacto.html">
+    <meta property="og:image" content="https://elgeza.com/assets/img/seo/contacto.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Contáctanos | Elgeza">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="stylesheet" href="/assets/css/styles.css?t=1548637914384">
+    <link rel="shortcut icon" href="/assets/img/icon-servicios.png">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://elgeza.com/",
+        "logo": "https://elgeza.com/assets/img/icon-servicios.png",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+51992280087",
+          "areaServed": "PE",
+          "availableLanguage": "Spanish",
+          "contactType": "sales"
+        }],
+        "sameAs": "https://www.facebook.com/ElgezaaPERU/"
+      }
+      
+    </script>
   </head>
   <body>
     <header class="main-header">
@@ -42,19 +64,36 @@
         </div>
       </div>
     </header>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Elgeza",
+          "item": "https://elgeza.com/"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contacto",
+          "item": "https://elgeza.com/contacto.html"
+        }]
+      }
+    </script>
     <section class="contact">
       <div class="contact-container">
         <h2 class="contact__title">Contáctanos
           <hr>
         </h2>
-        <div class="form-container"> 
-          <form class="contact__form">
-            <input class="contact__input" type="text" placeholder="Nombre" required>
-            <input class="contact__input" type="text" placeholder="Apellido" required>
-            <input class="contact__input" type="text" placeholder="Servicio" required>
-            <input class="contact__input" type="tel" name="" placeholder="Teléfono" required>
-            <input class="contact__input" type="email" placeholder="Correo electrónico" required>
-            <textarea class="contact__input" name="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+        <div class="form-container">
+          <form class="contact__form" method="POST" action="https://formspree.io/elgezaonline@gmail.com">
+            <input class="contact__input" type="text" placeholder="Nombre" name="nombre" required>
+            <input class="contact__input" type="text" placeholder="Apellido" name="apellido" required>
+            <input class="contact__input" type="text" placeholder="Servicio" name="servicio" required>
+            <input class="contact__input" type="tel" placeholder="Teléfono" name="telefono" required>
+            <input class="contact__input" type="email" placeholder="Correo electrónico" name="correo" required>
+            <textarea class="contact__input" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
             <button class="button button--guinda button-contact">Enviar</button>
           </form>
         </div>
@@ -133,7 +172,7 @@
         </div>
       </div>
     </footer>
-    <script src="/assets/js/scripts-min.js"></script>
+    <script src="/assets/js/scripts-min.js?t=1548637914384"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJaROzUzJ-qXI_qbJoWj-jNscP-ytigQ&amp;callback=initMap"></script>
   </body>
 </html>
