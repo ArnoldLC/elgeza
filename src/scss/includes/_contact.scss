@@ -12,29 +12,30 @@
     @include from(l) {
       width: 50%;
     }
-    
+
     button {
       font-size: 1rem;
     }
   }
-  
+
   &__input {
     width: 100%;
     min-width: 100%;
     font-size: 1rem;
+    font-family: $font-family;
     max-width: 100vw;
     margin-bottom: 1rem;
-    padding: .5em 1.25em;
-    border-radius: .625em;
+    padding: 0.5em 1.25em;
+    border-radius: 0.625em;
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
     background: var(--white);
-    opacity: .65;
+    opacity: 0.65;
     &::placeholder {
       color: var(--color-primary);
     }
   }
-  
+
   &__title {
     width: initial;
     padding: 0 1rem;
@@ -50,11 +51,10 @@
       position: absolute;
       width: 100vw;
       right: 0;
-      border: .5px solid var(--black);
-      margin-top: .625rem;
+      border: 0.5px solid var(--black);
+      margin-top: 0.625rem;
     }
   }
-  
 }
 
 .contact-container {
@@ -65,4 +65,3 @@
   @include edContainer;
   @include edItem(100);
 }
-
