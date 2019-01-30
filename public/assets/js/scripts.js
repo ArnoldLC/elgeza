@@ -8544,6 +8544,8 @@ var _dropdownMenu = require("./modules/dropdown-menu");
 
 var _fadeIn = require("./modules/fade-in");
 
+var _tabsForm = require("./modules/tabs-form");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // saludo()
@@ -8553,9 +8555,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _fixedNav.fixedNav)();
 (0, _dropdownMenu.dropdown)();
 (0, _fadeIn.fadeIn)();
+(0, _tabsForm.tabsForm)();
 
-if (!document.querySelector('.customers')) {} else {
-  var mySwiper = new _swiper2.default('.swiper-container--customers', {
+if (!document.querySelector(".customers")) {} else {
+  var mySwiper = new _swiper2.default(".swiper-container--customers", {
     loop: true,
     slidesPerView: 5,
     slidesPerColumn: 1,
@@ -8568,8 +8571,8 @@ if (!document.querySelector('.customers')) {} else {
       loadPrevNext: true
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
     },
     breakpoints: {
       320: {
@@ -8588,8 +8591,8 @@ if (!document.querySelector('.customers')) {} else {
   });
 }
 
-if (!document.querySelector('.projects')) {} else {
-  var projectsSlider = new _swiper2.default('.swiper-container--projects', {
+if (!document.querySelector(".projects")) {} else {
+  var projectsSlider = new _swiper2.default(".swiper-container--projects", {
     loop: true,
     slidesPerColumn: 1,
     slidesPerView: 1,
@@ -8598,13 +8601,13 @@ if (!document.querySelector('.projects')) {} else {
       delay: 5000
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
     }
   });
 }
 
-},{"./modules/active-menu":3,"./modules/dropdown-menu":4,"./modules/example":5,"./modules/fade-in":6,"./modules/fixed-nav":7,"./modules/show-nav":8,"swiper":1}],3:[function(require,module,exports){
+},{"./modules/active-menu":3,"./modules/dropdown-menu":4,"./modules/example":5,"./modules/fade-in":6,"./modules/fixed-nav":7,"./modules/show-nav":8,"./modules/tabs-form":9,"swiper":1}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -8703,6 +8706,48 @@ var showNav = exports.showNav = function showNav() {
     toggle.addEventListener('click', function () {
       navContainer.classList.toggle('show');
     });
+  }
+};
+
+},{}],9:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var tabsForm = exports.tabsForm = function tabsForm() {
+  var buttons = document.querySelector(".tab");
+
+  if (buttons) {
+    buttons.addEventListener("click", function (e) {
+      switch (e.target.textContent) {
+        case "Persona Jurídica":
+          openForm(e, "persona");
+          break;
+        case "Empresa":
+          openForm(e, "empresa");
+          break;
+        default:
+          break;
+      }
+    });
+  }
+
+  function openForm(evt, formName) {
+    var formEmpresa = document.getElementById("empresa");
+    var formPersona = document.getElementById("persona");
+
+    if (formName === "empresa" && formEmpresa.classList.contains("hide")) {
+      formEmpresa.classList.remove("hide");
+      formEmpresa.classList.add("show");
+      formPersona.classList.add("hide");
+    }
+
+    if (formName === "persona" && formPersona.classList.contains("hide")) {
+      formPersona.classList.remove("hide");
+      formPersona.classList.add("show");
+      formEmpresa.classList.add("hide");
+    }
   }
 };
 

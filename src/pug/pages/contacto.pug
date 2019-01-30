@@ -29,20 +29,41 @@ block main
       h2.contact__title Contáctanos
         hr
       .form-container
-        form(method="POST" action="https://formspree.io/elgezaonline@gmail.com").contact__form
-          input(type="text" placeholder="Nombre" name="nombre" required).contact__input
-          input(type="text" placeholder="Apellido" name="apellido" required).contact__input
-          select(name="servicio").contact__input
-            option(value="Electrobombas sumergibles") Electrobombas sumergibles
-            option(value="Grupos electrógenos") Grupos electrógenos
-            option(value="Instalaciones eléctricas") Instalaciones eléctricas
-            option(value="Rebobinado de motores") Rebobinado de motores
-            option(value="Grundfos") Grundfos
-            option(value="Tableros eléctricos de control") Tableros eléctricos de control
-            option(value="Transformadores de potencia") Transformadores de potencia
-          //- input(type="text" placeholder="Servicio" name="servicio" required).contact__input
-          input(type="tel" placeholder="Teléfono" name="telefono" required).contact__input
-          input(type="email" placeholder="Correo electrónico" name="correo" required).contact__input
-          textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje",required).contact__input
-          button(class="button button--guinda button-contact") Enviar
+        .tab
+          button(class="tablinks") Persona Jurídica
+          button(class="tablinks") Empresa
+
+        #persona.tabcontent.show
+          form(method="POST" action="https://formspree.io/elgezaonline@gmail.com").contact__form
+            input(type="text" placeholder="Nombre" name="nombre" required).contact__input
+            input(type="text" placeholder="Apellido" name="apellido" required).contact__input
+            select(name="servicio").contact__input
+              option(value="Electrobombas sumergibles") Electrobombas sumergibles
+              option(value="Grupos electrógenos") Grupos electrógenos
+              option(value="Instalaciones eléctricas") Instalaciones eléctricas
+              option(value="Rebobinado de motores") Rebobinado de motores
+              option(value="Grundfos") Grundfos
+              option(value="Tableros eléctricos de control") Tableros eléctricos de control
+              option(value="Transformadores de potencia") Transformadores de potencia
+            //- input(type="text" placeholder="Servicio" name="servicio" required).contact__input
+            input(type="tel" placeholder="Teléfono" name="telefono" required).contact__input
+            input(type="email" placeholder="Correo electrónico" name="correo" required).contact__input
+            textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje",required).contact__input
+            button(class="button button--guinda button-contact") Enviar
+        #empresa.tabcontent.hide
+          form(method="POST" action="https://formspree.io/elgezaonline@gmail.com").contact__form
+            input(type="text" placeholder="Nombre de la Empresa" name="empresa" required).contact__input
+            select(name="servicio").contact__input
+              option(value="Electrobombas sumergibles") Electrobombas sumergibles
+              option(value="Grupos electrógenos") Grupos electrógenos
+              option(value="Instalaciones eléctricas") Instalaciones eléctricas
+              option(value="Rebobinado de motores") Rebobinado de motores
+              option(value="Grundfos") Grundfos
+              option(value="Tableros eléctricos de control") Tableros eléctricos de control
+              option(value="Transformadores de potencia") Transformadores de potencia
+            //- input(type="text" placeholder="Servicio" name="servicio" required).contact__input
+            input(type="tel" placeholder="Teléfono" name="telefono" required).contact__input
+            input(type="email" placeholder="Correo electrónico" name="correo" required).contact__input
+            textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje",required).contact__input
+            button(class="button button--guinda button-contact") Enviar
   include /includes/map
