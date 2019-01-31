@@ -30,14 +30,15 @@ block main
         hr
       .form-container
         .tab
-          button(class="tablinks") Persona Jurídica
+          button(class="tablinks") Persona Natural
           button(class="tablinks") Empresa
 
         #persona.tabcontent.show
           form(method="POST" action="https://formspree.io/elgezaonline@gmail.com").contact__form
             input(type="text" placeholder="Nombre" name="nombre" required).contact__input
             input(type="text" placeholder="Apellido" name="apellido" required).contact__input
-            select(name="servicio").contact__input
+            select(name="servicio" required).contact__input
+              option(value="servicio" disabled selected) Servicio
               option(value="Electrobombas sumergibles") Electrobombas sumergibles
               option(value="Grupos electrógenos") Grupos electrógenos
               option(value="Instalaciones eléctricas") Instalaciones eléctricas
@@ -49,11 +50,12 @@ block main
             input(type="tel" placeholder="Teléfono" name="telefono" required).contact__input
             input(type="email" placeholder="Correo electrónico" name="correo" required).contact__input
             textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje",required).contact__input
-            button(class="button button--guinda button-contact") Enviar
+            button(class="button button--transparent button-contact") Enviar
         #empresa.tabcontent.hide
           form(method="POST" action="https://formspree.io/elgezaonline@gmail.com").contact__form
             input(type="text" placeholder="Nombre de la Empresa" name="empresa" required).contact__input
-            select(name="servicio").contact__input
+            select(name="servicio" required).contact__input
+              option(value="servicio" disabled selected) Servicio
               option(value="Electrobombas sumergibles") Electrobombas sumergibles
               option(value="Grupos electrógenos") Grupos electrógenos
               option(value="Instalaciones eléctricas") Instalaciones eléctricas
@@ -65,5 +67,5 @@ block main
             input(type="tel" placeholder="Teléfono" name="telefono" required).contact__input
             input(type="email" placeholder="Correo electrónico" name="correo" required).contact__input
             textarea(name="mensaje", cols="30", rows="10", placeholder="Mensaje",required).contact__input
-            button(class="button button--guinda button-contact") Enviar
+            button(class="button button--transparent button-contact") Enviar
   include /includes/map

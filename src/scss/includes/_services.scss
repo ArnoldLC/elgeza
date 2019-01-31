@@ -5,8 +5,9 @@
     font-size: 1.5rem;
     color: var(--color-primary);
     margin-bottom: 1em;
+    margin-left: 2em;
+    font-size: 3rem;
     @include from(l) {
-      font-size: 2rem;
     }
   }
 
@@ -18,10 +19,10 @@
     margin-left: 1rem;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
-      width: .625em;
+      width: 0.625em;
       height: 3em;
       left: 0;
       background-color: var(--color-primary);

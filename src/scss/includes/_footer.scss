@@ -1,4 +1,5 @@
-.main-footer, .secondary-footer {
+.main-footer,
+.secondary-footer {
   @include edContainer;
   padding: 1rem 0;
   color: var(--white);
@@ -49,7 +50,7 @@
 
   &__description {
     text-align: center;
-    @include from (l) {
+    @include from(l) {
       margin-top: -5rem;
     }
   }
@@ -59,7 +60,7 @@
     font-weight: 900;
     color: var(--color-second);
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     @include from(l) {
       margin-top: -2rem;
     }
@@ -67,7 +68,7 @@
 
   &__section-title {
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
     font-weight: 700;
     @include from(l) {
@@ -77,7 +78,8 @@
   }
 }
 
-.services-list, .footer__contact {
+.services-list,
+.footer__contact {
   ul {
     list-style: none;
     padding: 0;
@@ -97,13 +99,15 @@
   ul:first-child {
     margin: 0;
     @include from(l) {
-      margin-bottom: calc(var(--vertical-content-space)*1.5);
+      margin-bottom: calc(var(--vertical-content-space) * 1.5);
     }
   }
 
   li {
     @include from(l) {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -113,13 +117,17 @@
     height: 8px;
     background: var(--white);
     border-radius: 100%;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
+    @include from(l) {
+      align-self: flex-start;
+      margin-top: 0.25rem;
+    }
   }
 }
 
 .footer__contact {
   .footer__section-title {
-    @include from (l) {
+    @include from(l) {
       text-align: left;
     }
   }
@@ -128,7 +136,7 @@
   }
   li {
     text-align: center;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     @include from(l) {
       display: flex;
       text-align: left;
@@ -137,7 +145,7 @@
 }
 
 .footer__services {
-  @include from (l) {
+  @include from(l) {
     flex-grow: 1;
   }
 }

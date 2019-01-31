@@ -1,5 +1,5 @@
 .contact {
-  background: url(/assets/img/contacto.png) center center;
+  background: url(/assets/img/contacto.jpg) center center;
   background-size: cover;
   margin: 0;
   padding: 14rem 0 4rem 0;
@@ -27,12 +27,12 @@
     margin-bottom: 1rem;
     padding: 0.5em 1.25em;
     border-radius: 0.625em;
-    border: 1px solid var(--color-primary);
-    color: var(--color-primary);
-    background: var(--white);
+    border: 1px solid var(--color-bg-second);
+    color: var(--color-bg-second);
+    background: transparent;
     opacity: 0.65;
     &::placeholder {
-      color: var(--color-primary);
+      color: var(--color-bg-second);
     }
   }
 
@@ -51,7 +51,7 @@
       position: absolute;
       width: 100vw;
       right: 0;
-      border: 0.5px solid var(--black);
+      border: 0.5px solid var(--color-bg-second);
       margin-top: 0.625rem;
     }
   }
@@ -64,37 +64,64 @@
 .form-container {
   @include edContainer;
   @include edItem(100);
+  justify-content: center;
   // /* Style the tab */
   .tab {
-    margin: 1.5rem auto;
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 2.5rem;
+    @include from(m) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+    }
+    @include from(l) {
+      width: 50%;
+    }
   }
 
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background: none;
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
+    color: var(--color-second);
+    border: 1px solid var(--color-second);
     cursor: pointer;
     padding: 0.625em 1.25em;
     border-radius: 1rem;
     margin-bottom: 0.5rem;
     font-size: 16px;
     transition: 0.3s;
+    outline: 0;
+    @include from(m) {
+      flex: 1;
+    }
     @include from(l) {
       margin-right: 2rem;
+    }
+
+    &:first-child {
+      margin-right: 1rem;
+      margin-left: 2rem;
+    }
+
+    &:last-child {
+      margin-right: 2rem;
+      margin-left: 1rem;
     }
   }
 
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background: var(--color-primary);
+    background: var(--color-second);
     color: var(--white);
   }
 
   /* Create an active/current tablink class */
   .tab button.active {
-    background: var(--color-primary);
+    background: var(--color-second);
     color: var(--white);
   }
 

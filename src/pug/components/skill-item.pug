@@ -1,4 +1,8 @@
-mixin skill(icon, title)
+mixin skill(icon, title, arriba, abajo)
   .skill-item
     img(src=`${icon}`, alt=`${title}`)
-    h2.skill-item__title=title
+    h2.skill-item__title
+      |
+      =arriba
+      |<br>
+      =abajo

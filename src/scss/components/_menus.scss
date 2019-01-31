@@ -40,11 +40,11 @@
       @include from(l) {
         background: var(--white);
         transform: scaleY(0);
-        box-shadow: -1px 1px 5px var(--black); 
+        box-shadow: -1px 1px 5px var(--black);
       }
       li {
         // padding: .5em;
-        border-bottom: 1px solid rgba($white, .2);
+        border-bottom: 1px solid rgba($white, 0.2);
         @include from(l) {
           // border-bottom: 3px solid transparent;
         }
@@ -57,7 +57,7 @@
           text-decoration: none;
           text-transform: uppercase;
           color: var(--white);
-          padding: .5em;
+          padding: 0.5em;
           display: block;
           @include from(l) {
             color: var(--black);
@@ -66,7 +66,9 @@
           &:hover {
             text-decoration: none;
             @include from(l) {
-              border-bottom: 3px solid var(--color-primary);
+              color: var(--color-primary);
+              font-weight: 600;
+              // border-bottom: 3px solid var(--color-primary);
             }
           }
         }
@@ -87,7 +89,7 @@
     }
     @include from(l) {
       color: var(--black);
-      padding: .5em 0;
+      padding: 0.5em 0;
       border-bottom: 3px solid transparent;
     }
   }
@@ -95,7 +97,7 @@
   &__item {
     // padding: 1em 0;
     // text-align: right;
-    border-bottom: 1px solid rgba($white, .2);
+    border-bottom: 1px solid rgba($white, 0.2);
     @include from(l) {
       margin-left: 2em;
       padding: 0;
@@ -108,17 +110,18 @@
     width: 2rem;
     height: 1.25rem;
     background: linear-gradient(
-                black 0,
-                black 20%,
-                  transparent 20%,
-                  transparent 40%,
-                black 40%,
-                black 60%,
-                transparent 60%,
-                transparent 80%,
-                black 80%,
-                black 100%,
-                transparent 100%);
+      black 0,
+      black 20%,
+      transparent 20%,
+      transparent 40%,
+      black 40%,
+      black 60%,
+      transparent 60%,
+      transparent 80%,
+      black 80%,
+      black 100%,
+      transparent 100%
+    );
     cursor: pointer;
     @include from(l) {
       display: none;
@@ -147,11 +150,10 @@
   align-items: center;
 }
 
-
 .header-links {
   background: var(--color-bg-primary);
   transform: translateX(80vw);
-  transition: all .5s;
+  transition: all 0.5s;
   position: fixed;
   z-index: var(--z-fixed);
   right: 0;

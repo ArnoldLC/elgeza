@@ -1,0 +1,48 @@
+extends /config/template
+append config
+  -pageTitle = 'Venta de bombas'
+  //- -pageDescription = 'Los transformadores de gran potencia son proyectados para garantizar alta funcionalidad en las más diversas aplicaciones y sectores del mercado.'
+  //- -ogTitle = 'Transformadores de Potencia | Elgeza'
+  //- -ogUrl = 'https://elgeza.com/servicios/transformadores-de-potencia.html'
+  //- -ogImageUrl = 'https://elgeza.com/assets/img/seo/transformadores.jpg'
+  //- -ogImageAlt = 'Transformadores de Potencia | Elgeza'
+
+
+block main
+  //- script(type="application/ld+json").
+  //-   {
+  //-     "@context": "http://schema.org",
+  //-     "@type": "BreadcrumbList",
+  //-     "itemListElement": [{
+  //-       "@type": "ListItem",
+  //-       "position": 1,
+  //-       "name": "Elgeza",
+  //-       "item": "https://elgeza.com/"
+  //-     },{
+  //-       "@type": "ListItem",
+  //-       "position": 2,
+  //-       "name": "Servicios",
+  //-       "item": "https://elgeza.com/servicios.html"
+  //-     },{
+  //-       "@type": "ListItem",
+  //-       "position": 3,
+  //-       "name": "Transformadores de Potencia",
+  //-       "item": "https://elgeza.com/servicios/transformadores-de-potencia.html"
+  //-     }]
+  //-   }
+  +bannerAltern('/assets/img/banner-venta.jpg', 'Venta de bombas')
+  main.service
+    .service-container
+      h3.service__title Sumergibles
+      p.service__description Elgeza te ofrece las mejores bombas sumergibles en Trujillo, contáctanos y cotiza los precios.
+    .service-images
+      //- h3.service-images__title Con amplia experiencia en reparación, especializado en la fabricación de transformadores eléctricos.
+      +imagesService('/assets/img/venta-1.jpg', 'Venta de bombas sumergibles', 'Venta de bombas sumergibles')
+      +imagesService('/assets/img/venta-2.jpg', 'Venta de bombas sumergibles', 'Venta de bombas sumergibles')
+      +imagesService('/assets/img/venta-3.jpg', 'Venta de bombas sumergibles', 'Venta de bombas sumergibles')
+      +imagesService('/assets/img/venta-4.jpg', 'Venta de bombas sumergibles', 'Venta de bombas sumergibles')
+  section.contact-us(style='--bg-image: url(/assets/img/banner-venta-contact.jpg);')
+    .contact-us-container
+      p.contact-us__description Solicita este servicio y nos pondremos en contacto contigo
+      a.button.button--yellow(href="/contacto.html") Contáctanos Ahora
+  include /includes/map
