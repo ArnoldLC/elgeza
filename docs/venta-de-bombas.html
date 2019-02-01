@@ -14,8 +14,8 @@
     <meta property="og:image:alt">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <link rel="stylesheet" href="/assets/css/styles.css?t=1548914842887">
-    <link rel="shortcut icon" href="/assets/img/icon-servicios.png">
+    <link rel="stylesheet" href="/assets/css/styles.css?t=1548980751874">
+    <link rel="shortcut icon" href="/assets/img/favicon.png">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -154,9 +154,9 @@
               <li>
                  <span class="icon-map"></span>Av. César Vallejo 858 URB. Palermo<br>Trujillo - La Libertad</li>
               <li>
-                <span class="icon-phone"></span><a href="tel:+51992280087">+51 992280087</a></li>
+                <span class="icon-phone"></span><a href="tel:+51992280087">+51 992280087</a><span>/</span><a href="tel:+51998006273">+51 998006273</a></li>
               <li>
-                <span class="icon-fb"></span><a href="http://www.facebook.com">elgeza</a></li>
+                <span class="icon-fb"></span><a href="https://www.facebook.com/ElgezaaPERU/" target="_blank">/ElgezaaPERU</a></li>
               <li>
                 <span class="icon-mail"></span><a href="mailto:elgezaonline@gmail.com">elgezaonline@gmail.com</a></li>
             </ul>
@@ -169,7 +169,23 @@
         </div>
       </div>
     </footer>
-    <script src="/assets/js/scripts-min.js?t=1548914842887"></script>
+    <script>
+      (function () {
+          var options = {
+              facebook: "173261826512169", // Facebook page ID
+              whatsapp: "+51998006273", // WhatsApp number
+              call_to_action: "Envianos un mensaje", // Call to action
+              button_color: "#129BF4", // Color of button
+              position: "right", // Position may be 'right' or 'left'
+              order: "facebook,whatsapp", // Order of buttons
+          };
+          var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+          s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })()
+    </script>
+    <script src="/assets/js/scripts-min.js?t=1548980751874"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJaROzUzJ-qXI_qbJoWj-jNscP-ytigQ&amp;callback=initMap"></script>
   </body>
 </html>
