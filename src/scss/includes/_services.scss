@@ -2,12 +2,12 @@
   padding: 2rem 0;
   &__title {
     @include edItem(100);
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color-primary);
     margin-bottom: 1em;
     margin-left: 2em;
-    font-size: 3rem;
     @include from(l) {
+      font-size: 3rem;
     }
   }
 

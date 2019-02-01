@@ -14,9 +14,10 @@
   color: var(--white);
   p {
     margin: 0;
-  }
-  a {
-    color: var(--white);
+    a {
+      color: var(--color-second);
+      font-weight: 700;
+    }
   }
 }
 
