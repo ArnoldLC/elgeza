@@ -1,35 +1,30 @@
 extends /config/template
 append config
   -pageTitle = 'Venta de bombas'
-  //- -pageDescription = 'Los transformadores de gran potencia son proyectados para garantizar alta funcionalidad en las más diversas aplicaciones y sectores del mercado.'
-  //- -ogTitle = 'Transformadores de Potencia | Elgeza'
-  //- -ogUrl = 'https://elgeza.com/servicios/transformadores-de-potencia.html'
-  //- -ogImageUrl = 'https://elgeza.com/assets/img/seo/transformadores.jpg'
-  //- -ogImageAlt = 'Transformadores de Potencia | Elgeza'
+  -pageDescription = 'Elgeza te ofrece las mejores bombas sumergibles en Trujillo, contáctanos y cotiza los precios.'
+  -ogTitle = 'Venta de bombas | Elgeza'
+  -ogUrl = 'https://elgeza.com/venta-de-bombas.html'
+  -ogImageUrl = 'https://elgeza.com/assets/img/seo/home.jpg'
+  -ogImageAlt = 'Venta de bombas | Elgeza'
 
 
 block main
-  //- script(type="application/ld+json").
-  //-   {
-  //-     "@context": "http://schema.org",
-  //-     "@type": "BreadcrumbList",
-  //-     "itemListElement": [{
-  //-       "@type": "ListItem",
-  //-       "position": 1,
-  //-       "name": "Elgeza",
-  //-       "item": "https://elgeza.com/"
-  //-     },{
-  //-       "@type": "ListItem",
-  //-       "position": 2,
-  //-       "name": "Servicios",
-  //-       "item": "https://elgeza.com/servicios.html"
-  //-     },{
-  //-       "@type": "ListItem",
-  //-       "position": 3,
-  //-       "name": "Transformadores de Potencia",
-  //-       "item": "https://elgeza.com/servicios/transformadores-de-potencia.html"
-  //-     }]
-  //-   }
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Elgeza",
+        "item": "https://elgeza.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Venta de Bombas",
+        "item": "https://elgeza.com/venta-de-bombas.html"
+      }]
+    }
   +bannerAltern('/assets/img/banner-venta.jpg', 'Venta de bombas')
   main.service
     .service-container
