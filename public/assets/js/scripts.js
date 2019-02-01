@@ -8721,7 +8721,7 @@ var tabsForm = exports.tabsForm = function tabsForm() {
   if (buttons) {
     buttons.addEventListener("click", function (e) {
       switch (e.target.textContent) {
-        case "Persona Jurídica":
+        case "Persona Natural":
           openForm(e, "persona");
           break;
         case "Empresa":

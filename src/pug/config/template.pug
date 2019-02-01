@@ -21,7 +21,7 @@ html(lang="es")
     meta(property="og:image:width" content="1200")
     meta(property="og:image:height" content="630")
     link(rel="stylesheet" href="/assets/css/styles.css")
-    link(rel="shortcut icon" href="/assets/img/icon-servicios.png")
+    link(rel="shortcut icon" href="/assets/img/favicon.png")
     script(type="application/ld+json").
       {
         "@context": "http://schema.org",
@@ -42,5 +42,20 @@ html(lang="es")
     include /includes/top-bar
     block main
     include /includes/footer
+    script.
+      (function () {
+          var options = {
+              facebook: "173261826512169", // Facebook page ID
+              whatsapp: "+51998006273", // WhatsApp number
+              call_to_action: "Envianos un mensaje", // Call to action
+              button_color: "#129BF4", // Color of button
+              position: "right", // Position may be 'right' or 'left'
+              order: "facebook,whatsapp", // Order of buttons
+          };
+          var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+          s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })()
     script(src="/assets/js/scripts-min.js")
     script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJaROzUzJ-qXI_qbJoWj-jNscP-ytigQ&callback=initMap")

@@ -4,7 +4,7 @@ export const tabsForm = () => {
   if (buttons) {
     buttons.addEventListener("click", e => {
       switch (e.target.textContent) {
-        case "Persona Jurídica":
+        case "Persona Natural":
           openForm(e, "persona");
           break;
         case "Empresa":

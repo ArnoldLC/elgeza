@@ -1,5 +1,5 @@
 .main-banner {
-  background: var(--bg-image) center center;
+  background: var(--bg-image) center -5px;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 8rem 0;
@@ -8,8 +8,10 @@
 .banner-container {
   @include edContainer;
   position: relative;
-  h1, p {
+  h1,
+  p {
     @include edItem(100);
+    text-shadow: 2px 2px 7px var(--black);
   }
 
   h1 {
