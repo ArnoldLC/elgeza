@@ -42,6 +42,6 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "swiper": "^4.4.5"
+    "swiper": "^6.5.1"
   }
 }
